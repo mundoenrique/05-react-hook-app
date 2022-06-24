@@ -1,3 +1,11 @@
+import CounterApp from './01-UseState/CounterApp';
+
 export default function App() {
-	return <div>App</div>;
+	return (
+		<>
+			<h1>Hooks React</h1>
+			<br />
+			<CounterApp />
+		</>
+	);
 }
