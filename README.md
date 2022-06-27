@@ -2,4 +2,5 @@
 
 ## links
 
-[The Breaking Bad API](https://breakingbadapi.com/)
+[The Breaking Bad API](https://breakingbadapi.com)
+[hooks](https://es.reactjs.org/docs/hooks-reference.html)
