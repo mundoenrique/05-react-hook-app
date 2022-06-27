@@ -6,6 +6,7 @@ import MultipleCustomHooks from './03-examples/MultipleCustomHooks';
 import FocusScreen from './04-useRef/FocusScreen';
 import Layout from './05-useLayoutEffct/Layout';
 import Memmorize from './06-memos/Memorize';
+import MemoHook from './06-memos/MemoHook';
 
 export default function App() {
 	return (
@@ -48,9 +49,15 @@ export default function App() {
 			<br />
 			<br />
 			<br />
-			<h2>UseLayoutEffect</h2>
+			<h2>Memmorize</h2>
 			<hr />
 			<Memmorize />
+			<br />
+			<br />
+			<br />
+			<h2>Memo Hook</h2>
+			<hr />
+			<MemoHook />
 		</>
 	);
 }
