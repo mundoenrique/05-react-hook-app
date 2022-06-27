@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function useForm(intialFormValues = {}) {
+export function useForm(intialFormValues = {}) {
 	const [formState, setFormState] = useState(intialFormValues);
 
 	const onInputchange = ({ target }) => {
@@ -11,7 +11,7 @@ export default function useForm(intialFormValues = {}) {
 		});
 	};
 
-	const onResetForm = (intialFormValues) => {
+	const onResetForm = () => {
 		setFormState(intialFormValues);
 	};
 

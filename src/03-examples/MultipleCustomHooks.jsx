@@ -1,5 +1,4 @@
-import { useCounter } from '../hooks/useCounter';
-import useFetch from '../hooks/useFetch';
+import { useCounter, useFetch } from '../hooks';
 
 export default function MultipleCustomHooks() {
 	const { counter: id, increment } = useCounter(1);
