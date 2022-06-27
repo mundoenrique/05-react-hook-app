@@ -11,8 +11,6 @@ export default function CounterApp() {
 
 	return (
 		<>
-			<h2>UseState</h2>
-			<hr />
 			<h3>Counter1: {counter1}</h3>
 			<button
 				className="btn btn-primary"
