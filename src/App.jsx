@@ -8,6 +8,7 @@ import Layout from './05-useLayoutEffct/Layout';
 import Memmorize from './06-memos/Memorize';
 import MemoHook from './06-memos/MemoHook';
 import CallbackHook from './06-memos/CallbackHook';
+import Padre from './07-tarea-memo/Padre';
 
 export default function App() {
 	return (
@@ -65,6 +66,12 @@ export default function App() {
 			<h2>UseCallback</h2>
 			<hr />
 			<CallbackHook />
+			<br />
+			<br />
+			<br />
+			<h2>Tarea Memos</h2>
+			<hr />
+			<Padre />
 		</>
 	);
 }
