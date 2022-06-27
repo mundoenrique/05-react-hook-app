@@ -28,7 +28,7 @@ export default function MemoHook() {
 
 function heavyStutf(iterationNumber = 100) {
 	for (let i = 0; i < iterationNumber; i++) {
-		console.log('Una vualta más...');
+		// console.log('Una vualta más...');
 	}
 
 	return `${iterationNumber} iteraciones realizadas`;

@@ -7,6 +7,7 @@ import FocusScreen from './04-useRef/FocusScreen';
 import Layout from './05-useLayoutEffct/Layout';
 import Memmorize from './06-memos/Memorize';
 import MemoHook from './06-memos/MemoHook';
+import CallbackHook from './06-memos/CallbackHook';
 
 export default function App() {
 	return (
@@ -58,6 +59,12 @@ export default function App() {
 			<h2>Memo Hook</h2>
 			<hr />
 			<MemoHook />
+			<br />
+			<br />
+			<br />
+			<h2>UseCallback</h2>
+			<hr />
+			<CallbackHook />
 		</>
 	);
 }
