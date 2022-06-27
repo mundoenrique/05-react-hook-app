@@ -3,6 +3,7 @@ import SimpleForm from './02-UseEffect/SimpleForm';
 import CounterApp from './01-UseState/CounterApp';
 import CounterWithCustomHook from './01-UseState/CounterWithCustomHook';
 import MultipleCustomHooks from './03-examples/MultipleCustomHooks';
+import FocusScreen from './04-useRef/FocusScreen';
 
 export default function App() {
 	return (
@@ -30,6 +31,12 @@ export default function App() {
 			<h2>Custom Hooks</h2>
 			<hr />
 			<MultipleCustomHooks />
+			<br />
+			<br />
+			<br />
+			<h2>Useref</h2>
+			<hr />
+			<FocusScreen />
 		</>
 	);
 }
