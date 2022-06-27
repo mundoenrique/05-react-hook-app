@@ -4,6 +4,7 @@ import CounterApp from './01-UseState/CounterApp';
 import CounterWithCustomHook from './01-UseState/CounterWithCustomHook';
 import MultipleCustomHooks from './03-examples/MultipleCustomHooks';
 import FocusScreen from './04-useRef/FocusScreen';
+import Layout from './05-useLayoutEffct/Layout';
 
 export default function App() {
 	return (
@@ -34,9 +35,15 @@ export default function App() {
 			<br />
 			<br />
 			<br />
-			<h2>Useref</h2>
+			<h2>UseRef</h2>
 			<hr />
 			<FocusScreen />
+			<br />
+			<br />
+			<br />
+			<h2>UseLayoutEffect</h2>
+			<hr />
+			<Layout />
 		</>
 	);
 }
