@@ -1,12 +1,13 @@
 import { Route, Routes } from 'react-router-dom';
 import { AboutPage } from './AboutPage';
+import { UserProvider } from './context/UserProvider';
 import { HomePage } from './HomePage';
 import { LoginPage } from './LoginPage';
 import { NavBar } from './NavBar';
 
 export default function MainApp() {
 	return (
-		<>
+		<UserProvider>
 			<NavBar />
 			<Routes>
 				<Route path="/" element={<HomePage />} />
@@ -15,6 +16,6 @@ export default function MainApp() {
 				<Route path="*" element={<h1>No found</h1>} />
 				{/* <Route path="*" element={<Navigate to="/" />} /> */}
 			</Routes>
-		</>
+		</UserProvider>
 	);
 }
