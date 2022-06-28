@@ -3,15 +3,21 @@ import { TodoAdd } from './TodoAdd';
 import { TodoList } from './TodoList';
 
 export default function TodoApp() {
-	const { todos, onNewTodo, onRemoveTodo, onToggleTodo } = useTodo();
+	const {
+		todos,
+		todosCount,
+		pendingTodosCount,
+		onNewTodo,
+		onRemoveTodo,
+		onToggleTodo,
+	} = useTodo();
 
 	return (
 		<>
 			<div className="row">
 				<div className="col-7">
 					<h3>
-						TodoApp: {todos.length},{' '}
-						<span>Pendientes: {todos.filter((todo) => !todo.done).length}</span>
+						TodoApp: {todosCount}, <span>Pendientes: {pendingTodosCount}</span>
 					</h3>
 					<TodoList
 						todos={todos}
