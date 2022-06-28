@@ -21,6 +21,12 @@ export default function TodoApp() {
 
 	const onNewTodo = (todo) => {
 		console.log(todo);
+		const action = {
+			type: '[TODO] Add todo',
+			payload: todo,
+		};
+
+		dispatch(action);
 	};
 
 	return (
