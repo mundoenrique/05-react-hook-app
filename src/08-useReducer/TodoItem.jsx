@@ -1,10 +1,6 @@
-export function TodoItem({
-	id,
-	description,
-	done,
-	onRemoveTodo,
-	onToggleTodo,
-}) {
+export function TodoItem(props) {
+	const { id, description, done, onRemoveTodo, onToggleTodo } = props;
+
 	return (
 		<li className="list-group-item d-flex justify-content-between">
 			<span
