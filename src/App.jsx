@@ -1,20 +1,21 @@
-import FormWithCustomHook from './02-UseEffect/FormWithCustomHook';
-import SimpleForm from './02-UseEffect/SimpleForm';
-import CounterApp from './01-UseState/CounterApp';
-import CounterWithCustomHook from './01-UseState/CounterWithCustomHook';
-import MultipleCustomHooks from './03-examples/MultipleCustomHooks';
-import FocusScreen from './04-useRef/FocusScreen';
-import Layout from './05-useLayoutEffct/Layout';
-import Memmorize from './06-memos/Memorize';
-import MemoHook from './06-memos/MemoHook';
-import CallbackHook from './06-memos/CallbackHook';
-import Padre from './07-tarea-memo/Padre';
-import TodoApp from './08-useReducer/TodoApp';
+// import FormWithCustomHook from './02-UseEffect/FormWithCustomHook';
+// import SimpleForm from './02-UseEffect/SimpleForm';
+// import CounterApp from './01-UseState/CounterApp';
+// import CounterWithCustomHook from './01-UseState/CounterWithCustomHook';
+// import MultipleCustomHooks from './03-examples/MultipleCustomHooks';
+// import FocusScreen from './04-useRef/FocusScreen';
+// import Layout from './05-useLayoutEffct/Layout';
+// import Memmorize from './06-memos/Memorize';
+// import MemoHook from './06-memos/MemoHook';
+// import CallbackHook from './06-memos/CallbackHook';
+// import Padre from './07-tarea-memo/Padre';
+// import TodoApp from './08-useReducer/TodoApp';
+import MainApp from './09-useContext/MainApp';
 
 export default function App() {
 	return (
 		<>
-			<h1>Hooks React</h1>
+			{/* <h1>Hooks React</h1>
 			<br />
 			<h2>UseState</h2>
 			<hr />
@@ -78,7 +79,8 @@ export default function App() {
 			<br />
 			<h2>UseReducer</h2>
 			<hr />
-			<TodoApp />
+			<TodoApp /> */}
+			<MainApp />
 		</>
 	);
 }
