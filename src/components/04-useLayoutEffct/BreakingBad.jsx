@@ -1,7 +1,7 @@
-import { useCounter, useFetch } from '../hooks';
-import { LoadingQuote, Quote } from '../03-examples';
+import { useCounter, useFetch } from '../../hooks';
+import { LoadingQuote, Quote } from './';
 
-export default function Layout() {
+export function BreakingBad() {
 	const { counter: id, increment } = useCounter(1);
 
 	const { data, isLoading, hasError } = useFetch(
@@ -12,8 +12,7 @@ export default function Layout() {
 
 	return (
 		<>
-			<h3>MultipleCustomHooks</h3>
-			{isLoading ? <LoadingQuote /> : <Quote author={author} quote={quote} />}
+			<h2>BreakingBad</h2>
 			<button
 				className="btn btn-outline-primary"
 				onClick={() => increment()}
@@ -21,6 +20,7 @@ export default function Layout() {
 			>
 				Next Quote
 			</button>
+			{isLoading ? <LoadingQuote /> : <Quote author={author} quote={quote} />}
 		</>
 	);
 }
