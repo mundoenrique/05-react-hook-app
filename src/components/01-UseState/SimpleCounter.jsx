@@ -7,7 +7,7 @@ export function SimpleCounter() {
 		<>
 			<h2>Counter1: {counter1}</h2>
 			<button
-				className="btn btn-primary mb-5"
+				className="btn btn-primary"
 				onClick={() => setCounter(counter1 + 10)}
 			>
 				counter1 +10
