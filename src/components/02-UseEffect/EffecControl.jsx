@@ -1,37 +1,27 @@
 import { useEffect, useState } from 'react';
-import Message from './Message';
+import { useForm } from '../../hooks';
+import { EventListener } from './';
 
-export default function SimpleForm() {
-	const [formState, setFormState] = useState({
+export function EffecControl() {
+	const { formState, username, email, onInputchange } = useForm({
 		username: 'Enrique',
 		email: 'mmx@mmx.com',
 	});
 
-	const { username, email } = formState;
-
-	const onInputchange = ({ target }) => {
-		const { name, value } = target;
-		setFormState({
-			...formState,
-			[name]: value,
-		});
-	};
-
 	useEffect(() => {
-		// console.log('useeffect called');
+		console.log('useeffect called');
 	}, []);
 
 	useEffect(() => {
-		// console.log('FormState changed');
+		console.log('FormState changed');
 	}, [formState]);
 
 	useEffect(() => {
-		// console.log('Email changed');
+		console.log('Email changed');
 	}, [email]);
 
 	return (
-		<>
-			<h3>Simple form</h3>
+		<form className="mt-5">
 			<input
 				type="text"
 				className="form-control"
@@ -40,7 +30,6 @@ export default function SimpleForm() {
 				value={username}
 				onChange={onInputchange}
 			/>
-			{username === 'Enrique2' && <Message />}
 			<input
 				type="mail"
 				className="form-control mt-2"
@@ -49,6 +38,7 @@ export default function SimpleForm() {
 				value={email}
 				onChange={onInputchange}
 			/>
-		</>
+			{username === 'Enrique2' && <EventListener />}
+		</form>
 	);
 }
