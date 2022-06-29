@@ -11,13 +11,25 @@ export function CounterWithCustomHook() {
 				role="group"
 				aria-label="Basic mixed styles example"
 			>
-				<button className="btn btn-outline-primary" onClick={() => increment()}>
+				<button
+					type="button"
+					className="btn btn-outline-primary"
+					onClick={() => increment()}
+				>
 					Add
 				</button>
-				<button className="btn btn-outline-danger" onClick={reset}>
+				<button
+					type="button"
+					className="btn btn-outline-danger"
+					onClick={reset}
+				>
 					Reset
 				</button>
-				<button className="btn btn-outline-info" onClick={() => decrement()}>
+				<button
+					type="button"
+					className="btn btn-outline-info"
+					onClick={() => decrement()}
+				>
 					Subtract
 				</button>
 			</div>

@@ -4,6 +4,7 @@ import UseStateHook, {
 	FormWithCustomHook,
 	MultipleCounter,
 	SimpleCounter,
+	SimpleForm,
 } from '../components/01-UseState';
 import HooksReference from '../components/HooksReference';
 
@@ -17,6 +18,7 @@ export function MainRouter() {
 						<Route path="simple-counter" element={<SimpleCounter />} />
 						<Route path="multiple-counter" element={<MultipleCounter />} />
 						<Route path="custom-counter" element={<CounterWithCustomHook />} />
+						<Route path="simple-form" element={<SimpleForm />} />
 						<Route path="custom-form" element={<FormWithCustomHook />} />
 					</Route>
 				</Routes>

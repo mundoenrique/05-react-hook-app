@@ -21,6 +21,11 @@ export default function UseStateHook() {
 					</NavLink>
 				</li>
 				<li className="nav-item">
+					<NavLink className="nav-link" to="simple-form">
+						Simple form
+					</NavLink>
+				</li>
+				<li className="nav-item">
 					<NavLink className="nav-link" to="custom-form">
 						Custom form
 					</NavLink>

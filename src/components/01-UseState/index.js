@@ -3,3 +3,4 @@ export * from './CounterWithCustomHook';
 export * from './FormWithCustomHook';
 export * from './MultipleCounter';
 export * from './SimpleCounter';
+export * from './SimpleForm';

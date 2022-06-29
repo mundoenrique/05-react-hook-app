@@ -10,34 +10,43 @@ export function FormWithCustomHook() {
 	return (
 		<>
 			<h2>Custom form</h2>
-			<input
-				type="text"
-				className="form-control"
-				placeholder="Username"
-				name="username"
-				value={username}
-				onChange={onInputchange}
-			/>
-			<input
-				type="mail"
-				className="form-control mt-2"
-				placeholder="email"
-				name="email"
-				value={email}
-				onChange={onInputchange}
-			/>
-			<input
-				type="password"
-				className="form-control mt-2"
-				placeholder="Contraseña"
-				name="password"
-				value={password}
-				onChange={onInputchange}
-			/>
+			<form>
+				<input
+					type="text"
+					className="form-control"
+					placeholder="Username"
+					autoComplete="off"
+					name="username"
+					value={username}
+					onChange={onInputchange}
+				/>
+				<input
+					type="mail"
+					className="form-control mt-2"
+					placeholder="Email"
+					autoComplete="off"
+					name="email"
+					value={email}
+					onChange={onInputchange}
+				/>
+				<input
+					type="password"
+					className="form-control mt-2"
+					placeholder="Password"
+					autoComplete="off"
+					name="password"
+					value={password}
+					onChange={onInputchange}
+				/>
 
-			<button className="btn btn-outline-danger mt-2" onClick={onResetForm}>
-				Reset
-			</button>
+				<button
+					type="reset"
+					className="btn btn-outline-danger mt-2"
+					onClick={onResetForm}
+				>
+					Reset
+				</button>
+			</form>
 		</>
 	);
 }
