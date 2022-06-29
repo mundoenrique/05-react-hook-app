@@ -21,7 +21,7 @@ export function EffecControl() {
 	}, [email]);
 
 	return (
-		<form className="mt-5">
+		<form>
 			<input
 				type="text"
 				className="form-control"

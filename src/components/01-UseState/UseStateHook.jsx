@@ -1,37 +1,37 @@
-import { NavLink, Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+import { UseCustomLink } from '../../hooks';
 
 export default function UseStateHook() {
 	return (
 		<>
-			<h1>UseState</h1>
-			<ul className="nav nav-tabs">
+			<ul className="nav nav-tabs mt-5">
 				<li className="nav-item">
-					<NavLink className="nav-link" to="simple-counter">
+					<UseCustomLink className="nav-link" to="">
 						Simple counter
-					</NavLink>
+					</UseCustomLink>
 				</li>
 				<li className="nav-item">
-					<NavLink className="nav-link" to="multiple-counter">
+					<UseCustomLink className="nav-link" to="multiple-counter">
 						Multiple counter
-					</NavLink>
+					</UseCustomLink>
 				</li>
 				<li className="nav-item">
-					<NavLink className="nav-link" to="custom-counter">
+					<UseCustomLink className="nav-link" to="custom-counter">
 						Custom counter
-					</NavLink>
+					</UseCustomLink>
 				</li>
 				<li className="nav-item">
-					<NavLink className="nav-link" to="simple-form">
+					<UseCustomLink className="nav-link" to="simple-form">
 						Simple form
-					</NavLink>
+					</UseCustomLink>
 				</li>
 				<li className="nav-item">
-					<NavLink className="nav-link" to="custom-form">
+					<UseCustomLink className="nav-link" to="custom-form">
 						Custom form
-					</NavLink>
+					</UseCustomLink>
 				</li>
 			</ul>
-			<div className="row">
+			<div className="row mt-2">
 				<div className="col">
 					<Outlet />
 				</div>

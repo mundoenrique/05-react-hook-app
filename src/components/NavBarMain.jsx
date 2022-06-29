@@ -1,12 +1,12 @@
-import { NavLink } from 'react-router-dom';
+import { UseCustomLink } from '../hooks';
 
 export default function NavBarMain() {
 	return (
 		<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
 			<div className="container-fluid">
-				<NavLink className="navbar-brand" to="/">
+				<UseCustomLink className="navbar-brand" to="/">
 					Navbar
-				</NavLink>
+				</UseCustomLink>
 				<button
 					className="navbar-toggler"
 					type="button"
@@ -21,14 +21,14 @@ export default function NavBarMain() {
 				<div className="collapse navbar-collapse" id="navbarNav">
 					<ul className="navbar-nav">
 						<li className="nav-item">
-							<NavLink className="nav-link" to="/use-state">
+							<UseCustomLink className="nav-link" to="/use-state">
 								Use State
-							</NavLink>
+							</UseCustomLink>
 						</li>
 						<li className="nav-item">
-							<NavLink className="nav-link" to="use-effect">
+							<UseCustomLink className="nav-link" to="use-effect">
 								Use effect
-							</NavLink>
+							</UseCustomLink>
 						</li>
 					</ul>
 				</div>

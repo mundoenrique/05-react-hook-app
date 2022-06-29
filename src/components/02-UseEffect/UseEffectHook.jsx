@@ -1,16 +1,17 @@
-import { NavLink, Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+import { UseCustomLink } from '../../hooks';
 
 export default function UseEffectHook() {
 	return (
 		<>
 			<ul className="nav nav-tabs mt-5">
 				<li className="nav-item">
-					<NavLink className="nav-link" to="">
+					<UseCustomLink className="nav-link" to="">
 						Effect control
-					</NavLink>
+					</UseCustomLink>
 				</li>
 			</ul>
-			<div className="row">
+			<div className="row mt-2">
 				<div className="col">
 					<Outlet />
 				</div>

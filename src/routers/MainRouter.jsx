@@ -6,6 +6,7 @@ import UseStateHook, {
 	SimpleCounter,
 	SimpleForm,
 } from '../components/01-UseState';
+import UseEffectHook, { EffecControl } from '../components/02-UseEffect';
 import HooksReference from '../components/HooksReference';
 
 export function MainRouter() {
@@ -15,11 +16,14 @@ export function MainRouter() {
 				<Routes>
 					<Route path="/" element={<HooksReference />} />
 					<Route path="use-state" element={<UseStateHook />}>
-						<Route path="simple-counter" element={<SimpleCounter />} />
+						<Route index element={<SimpleCounter />} />
 						<Route path="multiple-counter" element={<MultipleCounter />} />
 						<Route path="custom-counter" element={<CustomCounter />} />
 						<Route path="simple-form" element={<SimpleForm />} />
 						<Route path="custom-form" element={<CustomForm />} />
+					</Route>
+					<Route path="use-effect" element={<UseEffectHook />}>
+						<Route index element={<EffecControl />} />
 					</Route>
 				</Routes>
 			</div>
