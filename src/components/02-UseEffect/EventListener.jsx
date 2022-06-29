@@ -6,21 +6,18 @@ export function EventListener() {
 	useEffect(() => {
 		const onMouseMove = ({ x, y }) => {
 			setCoords({ x, y });
-			console.log("addEventListener :'-(");
 		};
 
 		window.addEventListener('mousemove', onMouseMove);
-		console.log("addEventListener :'-(");
 
 		return () => {
 			window.removeEventListener('mousemove', onMouseMove);
-			console.log('removeEventListener :-)');
 		};
 	}, []);
 
 	return (
 		<>
-			<h3>Coordenadas del mouse</h3>
+			<h3>Mouse location coordinates</h3>
 			{JSON.stringify(coords)}
 		</>
 	);
