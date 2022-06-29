@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 
-export default function FocusScreen() {
+export function FocusScreen() {
 	const inputRef = useRef();
 
 	const onClick = () => {
@@ -9,7 +9,7 @@ export default function FocusScreen() {
 
 	return (
 		<>
-			<h3>FocusScreen</h3>
+			<h2>FocusScreen</h2>
 			<input
 				ref={inputRef}
 				type="text"

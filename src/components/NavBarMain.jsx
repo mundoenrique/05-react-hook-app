@@ -30,6 +30,11 @@ export default function NavBarMain() {
 								Use effect
 							</UseCustomLink>
 						</li>
+						<li className="nav-item">
+							<UseCustomLink className="nav-link" to="use-ref">
+								Use Ref
+							</UseCustomLink>
+						</li>
 					</ul>
 				</div>
 			</div>

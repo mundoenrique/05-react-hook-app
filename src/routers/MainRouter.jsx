@@ -7,6 +7,7 @@ import UseStateHook, {
 	SimpleForm,
 } from '../components/01-UseState';
 import UseEffectHook, { EffecControl } from '../components/02-UseEffect';
+import UseRefHook, { FocusScreen } from '../components/03-useRef';
 import HooksReference from '../components/HooksReference';
 
 export function MainRouter() {
@@ -24,6 +25,9 @@ export function MainRouter() {
 					</Route>
 					<Route path="use-effect" element={<UseEffectHook />}>
 						<Route index element={<EffecControl />} />
+					</Route>
+					<Route path="use-ref" element={<UseRefHook />}>
+						<Route index element={<FocusScreen />} />
 					</Route>
 				</Routes>
 			</div>
