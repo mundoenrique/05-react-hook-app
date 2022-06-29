@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import UseStateHook, {
-	CounterWithCustomHook,
-	FormWithCustomHook,
+	CustomCounter,
+	CustomForm,
 	MultipleCounter,
 	SimpleCounter,
 	SimpleForm,
@@ -17,9 +17,9 @@ export function MainRouter() {
 					<Route path="use-state" element={<UseStateHook />}>
 						<Route path="simple-counter" element={<SimpleCounter />} />
 						<Route path="multiple-counter" element={<MultipleCounter />} />
-						<Route path="custom-counter" element={<CounterWithCustomHook />} />
+						<Route path="custom-counter" element={<CustomCounter />} />
 						<Route path="simple-form" element={<SimpleForm />} />
-						<Route path="custom-form" element={<FormWithCustomHook />} />
+						<Route path="custom-form" element={<CustomForm />} />
 					</Route>
 				</Routes>
 			</div>
