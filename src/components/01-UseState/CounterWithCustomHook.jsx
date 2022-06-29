@@ -6,7 +6,6 @@ export function CounterWithCustomHook() {
 	return (
 		<>
 			<h2>Custom counter: {counter}</h2>
-
 			<div
 				className="btn-group"
 				role="group"

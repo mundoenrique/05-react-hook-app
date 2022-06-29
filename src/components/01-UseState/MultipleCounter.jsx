@@ -13,7 +13,6 @@ export function MultipleCounter() {
 			<h2>Counter2: {counter2}</h2>
 			<h2>Counter3: {counter3}</h2>
 			<h2>Counter4: {counter4}</h2>
-
 			<div
 				className="btn-group"
 				role="group"
