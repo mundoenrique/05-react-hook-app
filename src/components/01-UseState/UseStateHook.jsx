@@ -20,6 +20,11 @@ export default function UseStateHook() {
 						Custom counter
 					</NavLink>
 				</li>
+				<li className="nav-item">
+					<NavLink className="nav-link" to="custom-form">
+						Custom form
+					</NavLink>
+				</li>
 			</ul>
 			<div className="row">
 				<div className="col">
