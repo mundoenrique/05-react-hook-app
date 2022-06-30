@@ -45,6 +45,11 @@ export default function NavBarMain() {
 								Use Memo
 							</UseCustomLink>
 						</li>
+						<li className="nav-item">
+							<UseCustomLink className="nav-link" to="use-reducer">
+								Use Reducer
+							</UseCustomLink>
+						</li>
 					</ul>
 				</div>
 			</div>

@@ -18,6 +18,7 @@ import MemoHook, {
 	Memmorize,
 	Father,
 } from '../components/05-useMemo';
+import ReducerHook, { TodoApp } from '../components/08-useReducer';
 
 export function MainRouter() {
 	return (
@@ -46,6 +47,9 @@ export function MainRouter() {
 						<Route path="memo" element={<Memmorize />} />
 						<Route path="call-back" element={<CallbackHook />} />
 						<Route path="memo-homework" element={<Father />} />
+					</Route>
+					<Route path="use-reducer" element={<ReducerHook />}>
+						<Route index element={<TodoApp />} />
 					</Route>
 				</Routes>
 			</div>

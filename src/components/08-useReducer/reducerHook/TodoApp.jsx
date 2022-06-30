@@ -1,8 +1,7 @@
-import { useTodo } from '../hooks';
-import { TodoAdd } from './TodoAdd';
-import { TodoList } from './TodoList';
+import { useTodo } from '../../../hooks';
+import { TodoList, TodoAdd } from '../';
 
-export default function TodoApp() {
+export function TodoApp() {
 	const {
 		todos,
 		todosCount,

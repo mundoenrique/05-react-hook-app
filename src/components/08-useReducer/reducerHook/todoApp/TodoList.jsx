@@ -1,4 +1,4 @@
-import { TodoItem } from './TodoItem';
+import { TodoItem } from '../../';
 
 export function TodoList({ todos = [], onRemoveTodo, onToggleTodo }) {
 	return (

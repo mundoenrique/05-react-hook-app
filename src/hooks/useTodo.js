@@ -1,5 +1,5 @@
 import { useEffect, useReducer } from 'react';
-import { todoReducer } from '../components/08-useReducer/todoReducer';
+import { todoReducer } from '../reducers/todoReducer';
 
 export function useTodo() {
 	const [todos, dispatch] = useReducer(todoReducer, [], initTodos);
