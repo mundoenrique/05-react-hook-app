@@ -1,5 +1,5 @@
-import { useCounter, useFetch } from '../../hooks';
-import { LoadingQuote, Quote } from './';
+import { useCounter, useFetch } from '../../../hooks';
+import { LoadingQuote, Quote } from '../';
 
 export function BreakingBad() {
 	const { counter: id, increment } = useCounter(1);

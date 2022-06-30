@@ -1,4 +1,4 @@
-export { default } from './UseLayoutEffectHook';
-export * from './BreakingBad';
-export * from './LoadingQuote';
-export * from './Quote';
+export { default } from './LayoutEffectHook';
+export * from './layoutEffectHook/BreakingBad';
+export * from './layoutEffectHook/breakingBad/LoadingQuote';
+export * from './layoutEffectHook/breakingBad/Quote';
