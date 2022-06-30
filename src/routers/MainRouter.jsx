@@ -12,11 +12,12 @@ import UseRefHook, { FocusScreen } from '../components/03-useRef';
 import UseLayoutEffectHook, {
 	BreakingBad,
 } from '../components/04-useLayoutEffct';
-import MemorizeHook, {
-	MemoHook,
-	Memmorize,
+import MemoHook, {
 	CallbackHook,
-} from '../components/05-memorize';
+	HeavyProcess,
+	Memmorize,
+	Father,
+} from '../components/05-useMemo';
 
 export function MainRouter() {
 	return (
@@ -40,10 +41,11 @@ export function MainRouter() {
 					<Route path="use-layout-effect" element={<UseLayoutEffectHook />}>
 						<Route index element={<BreakingBad />} />
 					</Route>
-					<Route path="use-memo" element={<MemorizeHook />}>
-						<Route index element={<MemoHook />} />
+					<Route path="use-memo" element={<MemoHook />}>
+						<Route index element={<HeavyProcess />} />
 						<Route path="memo" element={<Memmorize />} />
 						<Route path="call-back" element={<CallbackHook />} />
+						<Route path="memo-homework" element={<Father />} />
 					</Route>
 				</Routes>
 			</div>

@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { useCounter } from '../../hooks';
-import { Small } from './';
+import { useCounter } from '../../../hooks';
+import { Small } from '../';
 
 export function Memmorize() {
 	const { counter, increment } = useCounter(1);

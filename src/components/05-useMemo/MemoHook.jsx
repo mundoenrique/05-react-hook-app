@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import { UseCustomLink } from '../../hooks';
 
-export default function MemorizeHook() {
+export default function MemoHook() {
 	return (
 		<>
 			<ul className="nav nav-tabs mt-5">
@@ -18,6 +18,11 @@ export default function MemorizeHook() {
 				<li className="nav-item">
 					<UseCustomLink className="nav-link" to="call-back">
 						Call back
+					</UseCustomLink>
+				</li>
+				<li className="nav-item">
+					<UseCustomLink className="nav-link" to="memo-homework">
+						Memo homework
 					</UseCustomLink>
 				</li>
 			</ul>

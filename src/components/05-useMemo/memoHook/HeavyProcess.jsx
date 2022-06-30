@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
-import { useCounter } from '../../hooks';
+import { useCounter } from '../../../hooks';
 
-export function MemoHook() {
+export function HeavyProcess() {
 	const { counter, increment } = useCounter(1000);
 	const [show, setShow] = useState(true);
 
