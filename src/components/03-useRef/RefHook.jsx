@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import { UseCustomLink } from '../../hooks';
 
-export default function UseRefHook() {
+export default function RefHook() {
 	return (
 		<>
 			<ul className="nav nav-tabs mt-5">
