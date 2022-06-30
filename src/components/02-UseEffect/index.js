@@ -1,3 +1,3 @@
-export { default } from './UseEffectHook';
-export * from './EventListener';
-export * from './EffecControl';
+export { default } from './EffectHook';
+export * from './effectHook/effecControl/EventListener';
+export * from './effectHook/EffecControl';

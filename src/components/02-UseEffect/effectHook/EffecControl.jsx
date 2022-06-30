@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
-import { useCounter, useForm } from '../../hooks';
-import { EventListener } from './';
+import { useCounter, useForm } from '../../../hooks';
+import { EventListener } from '..';
 
 export function EffecControl() {
 	const { formState, username, email, onInputchange } = useForm({

@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import { UseCustomLink } from '../../hooks';
 
-export default function UseEffectHook() {
+export default function EffectHook() {
 	return (
 		<>
 			<ul className="nav nav-tabs mt-5">
