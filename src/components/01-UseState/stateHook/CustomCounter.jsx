@@ -1,4 +1,4 @@
-import { useCounter } from '../../hooks';
+import { useCounter } from '../../../hooks';
 
 export function CustomCounter() {
 	const { counter, increment, decrement, reset } = useCounter(1);

@@ -1,6 +1,6 @@
-export { default } from './UseStateHook';
-export * from './CustomCounter';
-export * from './CustomForm';
-export * from './MultipleCounter';
-export * from './SimpleCounter';
-export * from './SimpleForm';
+export { default } from './StateHook';
+export * from './stateHook/CustomCounter';
+export * from './stateHook/CustomForm';
+export * from './stateHook/MultipleCounter';
+export * from './stateHook/SimpleCounter';
+export * from './stateHook/SimpleForm';
