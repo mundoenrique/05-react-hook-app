@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
+import HooksReference from '../components/HooksReference';
 import UseStateHook, {
 	CustomCounter,
 	CustomForm,
@@ -8,7 +9,14 @@ import UseStateHook, {
 } from '../components/01-UseState';
 import UseEffectHook, { EffecControl } from '../components/02-UseEffect';
 import UseRefHook, { FocusScreen } from '../components/03-useRef';
-import HooksReference from '../components/HooksReference';
+import UseLayoutEffectHook, {
+	BreakingBad,
+} from '../components/04-useLayoutEffct';
+import MemorizeHook, {
+	MemoHook,
+	Memmorize,
+	CallbackHook,
+} from '../components/05-memorize';
 
 export function MainRouter() {
 	return (
@@ -28,6 +36,14 @@ export function MainRouter() {
 					</Route>
 					<Route path="use-ref" element={<UseRefHook />}>
 						<Route index element={<FocusScreen />} />
+					</Route>
+					<Route path="use-layout-effect" element={<UseLayoutEffectHook />}>
+						<Route index element={<BreakingBad />} />
+					</Route>
+					<Route path="use-memo" element={<MemorizeHook />}>
+						<Route index element={<MemoHook />} />
+						<Route path="memo" element={<Memmorize />} />
+						<Route path="call-back" element={<CallbackHook />} />
 					</Route>
 				</Routes>
 			</div>

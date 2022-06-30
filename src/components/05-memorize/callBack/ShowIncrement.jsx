@@ -1,7 +1,6 @@
 import { memo } from 'react';
 
-export default memo(function ShowIncrement({ increment }) {
-	// console.log('volví :(');
+export const ShowIncrement = memo(function ({ increment }) {
 	return (
 		<button className="btn btn-outline-warning" onClick={() => increment(5)}>
 			Incrementar

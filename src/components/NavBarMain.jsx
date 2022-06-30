@@ -35,6 +35,16 @@ export default function NavBarMain() {
 								Use Ref
 							</UseCustomLink>
 						</li>
+						<li className="nav-item">
+							<UseCustomLink className="nav-link" to="use-layout-effect">
+								Use Layouteffect
+							</UseCustomLink>
+						</li>
+						<li className="nav-item">
+							<UseCustomLink className="nav-link" to="use-memo">
+								Use Memo
+							</UseCustomLink>
+						</li>
 					</ul>
 				</div>
 			</div>
