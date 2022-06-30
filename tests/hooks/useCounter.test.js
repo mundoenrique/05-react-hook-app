@@ -1,7 +1,7 @@
 import { renderHook, act } from '@testing-library/react';
 import { useCounter } from '../../src/hooks/useCounter';
 
-describe('Pruebas en useCounter', () => {
+describe('Pruebas en Hook useCounter', () => {
 	test('Debe retornar los valores por defecto', () => {
 		const {
 			result: {
