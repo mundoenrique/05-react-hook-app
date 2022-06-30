@@ -50,6 +50,11 @@ export default function NavBarMain() {
 								Use Reducer
 							</UseCustomLink>
 						</li>
+						<li className="nav-item">
+							<UseCustomLink className="nav-link" to="use-context">
+								Use Context
+							</UseCustomLink>
+						</li>
 					</ul>
 				</div>
 			</div>

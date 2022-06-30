@@ -19,6 +19,11 @@ import MemoHook, {
 	Father,
 } from '../components/05-useMemo';
 import ReducerHook, { TodoApp } from '../components/08-useReducer';
+import ContextHook, {
+	AboutPage,
+	HomePage,
+	LoginPage,
+} from '../components/09-useContext';
 
 export function MainRouter() {
 	return (
@@ -50,6 +55,11 @@ export function MainRouter() {
 					</Route>
 					<Route path="use-reducer" element={<ReducerHook />}>
 						<Route index element={<TodoApp />} />
+					</Route>
+					<Route path="use-context" element={<ContextHook />}>
+						<Route index element={<HomePage />} />
+						<Route path="about" element={<AboutPage />} />
+						<Route path="login" element={<LoginPage />} />
 					</Route>
 				</Routes>
 			</div>
