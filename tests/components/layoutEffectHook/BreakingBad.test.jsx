@@ -1,10 +1,10 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import { BreakingBad } from '../../../../src/components/04-useLayoutEffct';
-import { useCounter } from '../../../../src/hooks/useCounter';
-import { useFetch } from '../../../../src/hooks/useFetch';
+import { BreakingBad } from '../../../src/components/04-useLayoutEffct';
+import { useFetch } from '../../../src/hooks/useFetch';
+import { useCounter } from '../../../src/hooks/useCounter';
 
-jest.mock('../../../../src/hooks/useCounter');
-jest.mock('../../../../src/hooks/useFetch');
+jest.mock('../../../src/hooks/useCounter');
+jest.mock('../../../src/hooks/useFetch');
 
 describe('Pruebas en <BreakingBad />', () => {
 	const mockIncrement = jest.fn();
